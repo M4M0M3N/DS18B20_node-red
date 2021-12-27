@@ -1,7 +1,8 @@
 # DS18B20 in node-red
 Aggiungere un sensore di temperatura digitale DS18B20 in nodered
 
-In questo progetto ho aggiunto un sensore di temperatura digitale ad un raspberry. In questo modo posso leggere la temperatura diirettamente da lui, senza aggiungere un sensore esterno.
+In questo progetto ho aggiunto un sensore di temperatura digitale ad un raspberry. In questo modo posso leggere la temperatura direttamente da lui, senza aggiungere un sensore esterno.
+Ho usato il sistema operativo raspOS lite.
 
 # Digitale vs Analogico
 Ho usato un sensore digitale. Questo ha pro e contro.
@@ -20,7 +21,7 @@ Pro
 
 Contro
 - Circuito piu' complicato
-- Programma con un po di istruzioni
+- Programma con un po' di istruzioni
 
 # Circuito
 Abbiamo bisogno solo del sensore e di 1 resistenza da 50 Kohm
@@ -31,10 +32,10 @@ ATTENTI al verso del sensore!!
 
 
 # Software
-Il DS18B20 e' un sensore digitale che comunica con un solo filo { 1-wire }.
+Il DS18B20 e' un sensore digitale che comunica con un solo filo `1-wire`.
 Questo protocollo e' molto diffuso e il raspberry usa il pin GPIO 4.
 
-Per abilitare il protocollo vi lascio la [guida](https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/). E' molto semplice e si puo fare in diversi modi
+Per abilitare il protocollo vi lascio la [guida](https://www.raspberrypi-spy.co.uk/2018/02/enable-1-wire-interface-raspberry-pi/). E' molto semplice e si puo fare in diversi modi in base alle necessità
 
 
 Scarichiamo la libreria con questo comando
