@@ -45,6 +45,8 @@ Una volta abilitata, creiamo il nostro file python
 
 > nano nome_programma.py
 
+![nano](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/nano.png?raw=true)
+
 Dentro ci scriviamo
 
 ```python
@@ -52,6 +54,8 @@ rom w1thermsensor import W1ThermSensor
 sensor = W1ThermSensor()
 print( sensor.get_temperature() )
 ```
+
+![script](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/script.png?raw=true)
 
 Trovate il file anche nella repository.
 
@@ -68,9 +72,14 @@ Se digitiamo
 > python3 nome_file.py
 Ci dovrebbe scrivere la temperatura.
 
+![nano](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/temp.png?raw=true)
+
 # Aggiungerlo a nodered
 Ora basta che prendiamo un nodo exec e come comando inseriamo
 > python3 nome_programma.py
 
+![flow](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/node-red.png?raw=true)
 
+Puoi anche graficare la temperatura usando il nodo chart della dashboard
 
+![temp_nodered](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/temp_nodered.png?raw=true)
