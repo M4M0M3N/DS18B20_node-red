@@ -10,7 +10,7 @@ Ho usato un sensore digitale. Questo ha pro e contro.
 # Digitale
 Pro 
 - Circuito molto semplice
-- La libreria fa tutto, a noi basta 2 righe
+- La libreria fa tutto, a noi bastano 2 righe
 
 Contro
 - Pecca un po di precisione 
@@ -24,7 +24,7 @@ Contro
 - Programma con un po' di istruzioni
 
 # Circuito
-Abbiamo bisogno solo del sensore e di 1 resistenza da 50 Kohm
+Abbiamo bisogno solo del sensore DS18B20 e di 1 resistenza da 50 Kohm
 
 ATTENTI al verso del sensore!!
 
@@ -51,9 +51,15 @@ Una volta abilitata, creiamo il nostro file python
 Dentro ci scriviamo
 
 ```python
-rom w1thermsensor import W1ThermSensor
-sensor = W1ThermSensor()
-print( sensor.get_temperature() )
+from w1thermsensor import W1ThermSensor
+
+for i in range(0,5):
+        sensor = W1ThermSensor()
+        temp = sensor.get_temperature()
+        if temp != "":
+                break
+
+print(temp)
 ```
 
 ![script](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/script.png?raw=true)
