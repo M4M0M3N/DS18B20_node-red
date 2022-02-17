@@ -62,8 +62,6 @@ for i in range(0,5):
 print(temp)
 ```
 
-![script](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/script.png?raw=true)
-
 Trovate il file anche nella repository.
 
 Ora premiamo 
