@@ -80,6 +80,7 @@ In questo modo abbiamo creato il file.
 Se digitiamo
 
 > python3 nome_file.py
+
 Ci dovrebbe scrivere la temperatura.
 
 ![nano](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/temp.png?raw=true)
