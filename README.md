@@ -85,7 +85,7 @@ Ci dovrebbe scrivere la temperatura.
 ![nano](https://github.com/M4M0M3N/DS18B20_node-red/blob/main/img/temp.png?raw=true)
 
 Se non viene rilevato nessun sensore, lo script restituisce la stringa
-> Errore, sensore non trovato"
+> Errore, sensore non trovato
 
 # Aggiungerlo a nodered
 Ora basta che prendiamo un nodo exec e come comando inseriamo
